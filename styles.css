@@ -74,6 +74,7 @@ body {
   
   .note-text {
     margin-bottom: 10px;
+    background-color:red;
   }
   
   .note-buttons {
@@ -83,7 +84,7 @@ body {
   }
   
   .note.green {
-    background-color: green;
+    background-color: lime;
     min-width:15vh;
     min-height:15vh;
     font-size:30px;
@@ -108,8 +109,8 @@ body {
     height:100%;
     font-size:120%;
     border-radius:25px;
-    color:red;
-    background-color:indigo;
+    color:#fff;
+    background-color:red;
     font-family: Cooper;
   }
 
@@ -169,13 +170,13 @@ body {
       }
 
       .note.green {
-        background-color: green;
+        background-color: lime;
         min-width:5vh;
         min-height:5vh;
       }
       
       .note.yellow {
-        background-color: yellow;
+        background-color: gold;
         min-width:5vh;
         min-height:5vh;
       }
@@ -185,6 +186,8 @@ body {
         height:100%;
         font-size:100%;
         border-radius:25px;
+        background-color: red;
+        color:#fff;
       }
 
       .notes {
@@ -205,6 +208,7 @@ body {
         font-size:200%;
         font-family: impact;
         font-weight:bolder;
+        color:red;
         
         
         
@@ -245,5 +249,21 @@ body {
       .note {
 
         font-family:caprasimo;
+      }
+
+      .noteText {
+        
+        max-width:40%;
+        
+      }
+
+      .delete-button {
+        background-color: #ff0000; /* Rosu */
+        color: #ffffff; /* Alb */
+        border: none;
+        padding:3px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-left:85%;
       }
   }
