@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url('img.jpg'); /* Adăugați calea corectă către imaginea de fundal */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    min-height:50%;
+  }
+  
+  .notes {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height:100vh;
+    backdrop-filter: blur(10px);
+    position:relative;
+    
+  }
+  
+  .note-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    height:7vh;
+  }
+  
+  .note-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .note-container {
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px; /* Spațiu între notițe */
+    min-height: 30%; /* Înălțimea minimă a notiței */
+    position: relative;
+    min-width:30%;
+  }
+  
+  .note-container::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  
+  .note-container:hover::before {
+    opacity: 1;
+  }
+  
+  .note-text {
+    margin-bottom: 10px;
+  }
+  
+  .note-buttons {
+    display: flex;
+    justify-content: space-between;
+    color:red;
+  }
+  
+  .note.green {
+    background-color: green;
+    min-width:15vh;
+    min-height:15vh;
+    font-size:30px;
+  }
+  
+  .note.yellow {
+    background-color: #FFD700;
+    min-width:15vh;
+    min-height:15vh;
+  }
+
+  .delete-button {
+    background-color: #ff0000; /* Rosu */
+    color: #ffffff; /* Alb */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .adaugareNotita {
+    width:20%;
+    height:100%;
+    font-size:120%;
+    border-radius:25px;
+    color:red;
+    background-color:indigo;
+    font-family: Cooper;
+  }
+
+  .Titlu {
+
+    font-size:40px;
+    font-family: impact;
+    font-weight:bolder;
+    
+    
+    
+  }
+
+  .titluDiv {
+    width:50vh;
+    height:8vh;
+    border:px;
+    background-color:rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius:5px;
+    text-align:center;
+    margin:20px;
+  }
+
+  .note {
+    font-size: 125%;
+    border: 2px solid #e0e0e0; /* Adaugă o bordură solidă de 2px cu o culoare gri deschis */
+    border-radius: 10px; /* Rotunjirea colțurilor bordurii */
+    padding: 10px; /* Spațiu interior pentru a separa conținutul de bordură */
+    font-family:caprasimo;
+  }
+  
+
+  @media (max-width: 700px)  {
+    /* Stiluri pentru telefonul cu ecran de 1080x2400px aici */
+
+    body {
+      min-width:100%;
+      min-height:100%;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      background-image: url('img.jpg'); /* Adăugați calea corectă către imaginea de fundal */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .note-form {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+        height:5vh;
+        
+      }
+
+      .note.green {
+        background-color: green;
+        min-width:5vh;
+        min-height:5vh;
+      }
+      
+      .note.yellow {
+        background-color: yellow;
+        min-width:5vh;
+        min-height:5vh;
+      }
+
+      .adaugareNotita {
+        width:28%;
+        height:100%;
+        font-size:100%;
+        border-radius:25px;
+      }
+
+      .notes {
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        min-height:100vh;
+        backdrop-filter: blur(10px);
+        position:relative;
+        min-width:43vh;
+    
+      }
+
+      .Titlu {
+        padding-top:5%;
+        font-size:200%;
+        font-family: impact;
+        font-weight:bolder;
+        
+        
+        
+      }
+    
+      .titluDiv {
+        width:70%;
+        min-height:5%;
+        border:px;
+        background-color:rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius:5px;
+        text-align:center;
+        margin:20px;
+        margin-left:30%
+      }
+
+      .notes {
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        min-height:100vh;
+        backdrop-filter: blur(10px);
+        position:relative;
+        min-width:100%;
+      }
+
+      .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        min-height:50%;
+      }
+
+      .note {
+
+        font-family:caprasimo;
+      }
+  }
