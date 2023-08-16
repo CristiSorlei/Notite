@@ -189,13 +189,14 @@ body {
 
       .notes {
         background-color: rgba(0, 0, 0, 0.4);
-        padding: 20px;
+        padding-left:100 px;
         border-radius: 30px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         min-height:100vh;
         backdrop-filter: blur(10px);
-        position:relative;
-        min-width:43vh;
+        position:absolute;
+        max-width:auto;
+        margin-left:20%;
     
       }
 
@@ -219,18 +220,19 @@ body {
         border-radius:5px;
         text-align:center;
         margin:20px;
-        margin-left:30%
+        margin-left:17%
       }
 
       .notes {
         background-color: rgba(0, 0, 0, 0.4);
-        padding: 20px;
+        padding-left: 20px;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         min-height:100vh;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(1px);
         position:relative;
-        min-width:100%;
+        max-width:90%;
+        margin-left:0px;
       }
 
       .container {
