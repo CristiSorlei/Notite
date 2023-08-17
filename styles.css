@@ -20,7 +20,7 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.134);
     min-height:100vh;
     backdrop-filter: blur(3px);
     position:relative;
@@ -84,7 +84,7 @@ body {
   }
   
   .note.green {
-    background-color: lime;
+    background-color: #610F7F;
     min-width:15vh;
     min-height:15vh;
     font-size:30px;
@@ -170,7 +170,7 @@ body {
       }
 
       .note.green {
-        background-color: lime;
+        background-color: #610F7F;
         min-width:5vh;
         min-height:5vh;
       }
@@ -186,7 +186,7 @@ body {
         height:100%;
         font-size:100%;
         border-radius:25px;
-        background-color: red;
+        background-color: #610F7F;
         color:#fff;
       }
 
@@ -208,7 +208,7 @@ body {
         font-size:200%;
         font-family: impact;
         font-weight:bolder;
-        color:red;
+        color:#fff;
         
         
         
@@ -218,17 +218,19 @@ body {
         width:70%;
         min-height:5%;
         border:px;
-        background-color:rgba(0, 0, 0, 0.4);
+        background-color:#610f7f37;
         backdrop-filter: blur(10px);
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.426);
         border-radius:5px;
         text-align:center;
         margin:20px;
-        margin-left:17%
+        margin-left:17%;
+        padding:auto;
+        
       }
 
       .notes {
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: #610f7f95;
         padding-left: 20px;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -246,9 +248,10 @@ body {
         min-height:50%;
       }
 
-      .note {
+      .note-container {
 
         font-family:caprasimo;
+        background-color: red;
       }
 
       .noteText {
@@ -258,7 +261,7 @@ body {
       }
 
       .delete-button {
-        background-color: #ff0000; /* Rosu */
+        background-color: #610F7F; /* Rosu */
         color: #ffffff; /* Alb */
         border: none;
         padding:3px;
@@ -266,4 +269,6 @@ body {
         cursor: pointer;
         margin-left:85%;
       }
+
+      
   }
